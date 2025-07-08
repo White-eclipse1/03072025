@@ -1,0 +1,20 @@
+name: Impresiones en consola
+
+on:
+  push:
+    branches:
+      - test_1  # Solo se ejecuta si se sube a esta rama
+
+jobs:
+  imprimir_mensajes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Mostrar impresión 1
+      run: echo "Impresión 1"
+
+    - name: Mostrar impresión 2
+      run: echo "Impresión 2"
+
+    - name: Mostrar impresión 3
+      run: echo "Impresión 3"
